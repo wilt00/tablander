@@ -1,0 +1,24 @@
+{
+  "name": "tablander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tablander-background.js",
+  "scripts": {
+    "lint": "web-ext lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilt00/tablander.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilt00/tablander/issues"
+  },
+  "homepage": "https://github.com/wilt00/tablander#readme",
+  "devDependencies": {
+    "web-ext": "^6.1.0",
+    "web-ext-types": "^3.2.1"
+  }
+}
