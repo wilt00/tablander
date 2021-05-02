@@ -14,7 +14,6 @@
     const matchingTabs = existingTabs.filter(
       (t) => t.id !== tabId && t.cookieStoreId === containerName
     );
-    console.log({matchingTabs});
 
     if (matchingTabs[0]) {
       browser.tabs.remove(tabId);

@@ -5,7 +5,6 @@ function saveOptions(e) {
     .map((s) => s.trim())
     .filter(Boolean);
 
-  console.log(sites);
   browser.storage.sync.set({ sites });
   e.preventDefault();
 }
