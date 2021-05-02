@@ -21,7 +21,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "tablander@halsted.space",
-      "strict_min_version": "57.0a1"
+      "strict_min_version": "63.0"
     }
   }
 }
