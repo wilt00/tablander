@@ -2,14 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <base href=".">
   </head>
 
   <body>
-    <form style="display: flex; flex-direction: column; margin: 16px">
-      <label for="sites">Sites (one per line)</label>
-      <textarea id="sites" name="sites"></textarea>
-      <button type="submit">Save</button>
-    </form>
-    <script src="tablander-options.js"></script>
+    <div id="app"></div>
+    <script type="module" src="tablander-options.mjs"></script>
   </body>
 </html>
