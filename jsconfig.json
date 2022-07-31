@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "typeRoots": ["./typings", "./vendor/webextension-polyfill_0.9.0"]
+  },
+  "exclude": ["node_modules", "vendor/**/*.js"]
+}

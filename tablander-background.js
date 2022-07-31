@@ -32,7 +32,6 @@
 
       if (matchingTabs[0]) {
         browser.tabs.remove(tabId);
-        // @ts-ignore
         browser.tabs.highlight({
           populate: false,
           tabs: [matchingTabs[0].index],

@@ -11,7 +11,10 @@
     "webNavigation"
   ],
   "background": {
-    "scripts": ["tablander-background.js"]
+    "scripts": [
+      "./vendor/webextension-polyfill_0.9.0/browser-polyfill.js",
+      "tablander-background.js"
+    ]
   },
   "icons": { "48": "icon.png" },
   "options_ui": {
