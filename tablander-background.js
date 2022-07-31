@@ -13,20 +13,18 @@
     sites =>
     async ({ tabId, url }) => {
       console.log({ tabId, url, sites });
-      const { cookieStoreId: containerName } = await browser.tabs.get(tabId);
+      const { cookieStoreId } = await browser.tabs.get(tabId);
 
       // Go through list of sites - find one that matches current url - use that in tabs.query
       // sites.filter()
 
-      const existingTabs = await browser.tabs.query({ url });
+      const existingTabs = await browser.tabs.query({ url, cookieStoreId });
 
       console.log({ existingTabs });
 
       if (!Array.isArray(existingTabs)) return;
 
-      const matchingTabs = existingTabs.filter(
-        t => t.id !== tabId && t.cookieStoreId === containerName
-      );
+      const matchingTabs = existingTabs.filter(t => t.id !== tabId);
 
       console.log({ matchingTabs });
 
